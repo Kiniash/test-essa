@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mmust </title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="My project\home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=
+Roboto:ital,wght@0,300;0,500;1,900&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/
+font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+    <div class="login-page">
+     
+     <img class="image1" src="mmust pics\essa.logo.jpeg" alt="">
+     
+    <h2 >Welcome to MMUST ESSA Club</h2>
+    
+    </div>
+    <div class="comment-box">
+      <h3>Join Us Now</h3>
+      <form action="" class="commemt-form">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input  rows="5" placeholder="Reg Number"></input>
+            </form>
+            <button type="submit" class="hero-btn red-btn" onclick="openPopup()">SUBMIT</button>
+
+    </div>
+    <!------------------popup----------------------->
+    <div class="popup" id="popup">
+      <img src="/mmust pics/tick1.png" alt="">
+      <h2>Thank You!</h2>
+      <p>Your request has been succesfully submited. 
+        <br>Thanks for choosing ESSA<i class="fa fa-heart-o"></i>.</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <script>
+      let popup= document.getElementById("popup");
+
+      function openPopup(){
+       popup.classList.add("open-popup");
+      }
+      function closePopup(){
+       popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>
